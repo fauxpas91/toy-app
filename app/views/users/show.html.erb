@@ -11,6 +11,8 @@
 </p>
 
 <p>
+  
+<!-- If else statement for when a new user is created/a user doesn't have any microposts to display -->
 <% if @user.microposts.first.try(:content) == nil %>
   <strong>First Micropost:</strong>
   <%= "no posts" %>
